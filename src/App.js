@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import cookies from 'js-cookie'
 import classNames from 'classnames'
+import signIn from './component/signIn/signIn'
 import './index.css'
 import UkraineIconsLanguage from './img/UkraineIconsLanguage.svg'
 import EnglishIconsLanguage from './img/EnglishIconsLanguage.svg'
@@ -10,12 +11,12 @@ import EnglishIconsLanguage from './img/EnglishIconsLanguage.svg'
 const languages = [
   {
     code: 'fr',
-    name: <img src={UkraineIconsLanguage} />,
+    name: <div className="UkraineBlockLanguage"><img src={UkraineIconsLanguage} /></div>,
     country_code: 'fr',
   },
   {
     code: 'en',
-    name: <img src={EnglishIconsLanguage} />,
+    name: <div className="EnglishBlockLanguage"><img src={EnglishIconsLanguage} /></div>,
     country_code: 'gb',
   },
 ]
@@ -45,12 +46,13 @@ export default function App() {
       </div>
 
 
-              
-        {languages.map(({ code, name, country_code }) => (
+
+      <div className="languageSelectionUkraineAndEnglish">
+        {languages.map(({ code, name, country_code }) => (        
           <div key={country_code}>
             <a
               href="#"
-              className={classNames('item', {
+              className={classNames({
                 disabled: currentLanguageCode === code,
               })}
               onClick={() => {
@@ -58,9 +60,11 @@ export default function App() {
               }}
             >
               {name}
-            </a>            
+            </a>                       
           </div>
         ))}
+      </div>
+
       
       </div>
 
