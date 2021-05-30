@@ -1,0 +1,79 @@
+.blockDimensionsCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.blockAppearanceLogiIn{
+    width: 440px;
+    /* height: 591px; */
+    border-radius: 18px;
+    background: #E7EBE8;
+}
+
+.blueSquare{
+    margin: 50px 173px 50px 173px;
+    width: 94px;
+    height: 94px;
+    background: #52B7EF;
+    border-radius: 8px;
+}
+
+.SupplierPortal{
+    margin: 30px 135px 0px 135px;
+    width: 170px;
+    height: 23px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+}
+
+.emailLognIn{
+    margin: 30px 50px 0px 50px;
+    width: 340px;
+    height: 48px;
+    background: #D3D3D3;
+    border-radius: 4px;
+    border-color: #D3D3D3;
+}
+
+.passwordLognIn{
+    margin: 30px 50px 0px 50px;
+    width: 340px;
+    height: 48px;
+    background: #D3D3D3;
+    border-radius: 4px;
+    border-color: #D3D3D3;  
+}
+
+.radioLognIn{
+    margin: 20px 0px 0px 50px;
+    width: 32px;
+}
+
+.RememberUsername{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    color: #626663;
+}
+
+.buttonSignUp{
+    margin: 30px 115px 0px 115px;
+    width: 210px;
+    height: 48px;
+    background: #76DE37;
+    border-radius: 8px;
+    border-color: #76DE37;
+}
+
+.CreateAccount{
+    margin: 33px 162px 63px 162px;
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 22px;
+    color: #333333;
+}
