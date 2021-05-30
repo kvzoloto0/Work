@@ -7,76 +7,38 @@ import './index.css'
 import UkraineIconsLanguage from './img/UkraineIconsLanguage.svg'
 import EnglishIconsLanguage from './img/EnglishIconsLanguage.svg'
 import SignIn from './component/SignIn/SignIn'
-
-const languages = [
-  {
-    code: 'fr',
-    name: <div className="UkraineBlockLanguage"><img src={UkraineIconsLanguage} /></div>,
-    country_code: 'fr',
-  },
-  {
-    code: 'en',
-    name: <div className="EnglishBlockLanguage"><img src={EnglishIconsLanguage} /></div>,
-    country_code: 'gb',
-  },
-]
+import {BrowserRouter, Route, NavLink} from "react-router-dom";
+import Language from './component/Language/Language'
+import BasicExample from './component/qqq'
 
 
 
 export default function App() {
-  const currentLanguageCode = cookies.get('i18next') || 'en'
-  const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
-  const { t } = useTranslation()
-
-
-
-
-  return (
+  return(
     <div>
-  
-      {/* <div className="container blockDimensionsCenter">
-        <div className="language-select blockDimensions">
+        
+        {/* <BrowserRouter>  
+          <NavLink to="/Language">Language</NavLink>     
+          <Route path="/Language" render={ () => <Language /> } />
 
-
-
-        <div className="row">
-          <div className="col-12">
-            <h1 className="textDecorationSelectLanguage">{t('welcome_message')}</h1> 
-          </div>    
-        </div>
-
-
-
-        <div className="languageSelectionUkraineAndEnglish">
-          {languages.map(({ code, name, country_code }) => (        
-            <div key={country_code}>
-              <a
-                href="#"
-                className={classNames({
-                  disabled: currentLanguageCode === code,
-                })}
-                onClick={() => {
-                  i18next.changeLanguage(code)
-                }}
-              >
-                {name}
-              </a>                       
-            </div>
-          ))}
-        </div>
+          <NavLink to="/SignIn">SignIn</NavLink>     
+          <Route path="/SignIn" render={ () => <SignIn /> } />
+        </BrowserRouter> */}
 
         
-        </div>
+        {/* <BrowserRouter>   */}
+          <Language />  
+          {/* <Route path="/Language" render={ () => <Language /> } />
+        </BrowserRouter> */}
 
 
+        {/* <BrowserRouter>       
+          <NavLink to="/SignIn">SignIn</NavLink>     
+          <Route path="/SignIn" render={ () => <SignIn /> } />
+        </BrowserRouter> */}
 
-      </div> */}
+ {/* <SignIn /> */}
 
-
-
-
-
-      <SignIn />
 
       </div>
   )
