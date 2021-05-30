@@ -32,7 +32,7 @@ const SignIn = () => {
                     <div className="SupplierPortal">{t("SUPPLIER_PORTAL")}</div>
                     <input className="emailLognIn" placeholder={t("Email")}></input>
                     <input className="passwordLognIn" placeholder={t("Password")}></input>
-                    <div>                    
+                    <div className="radioLognInBlock">                    
                         <input className="radioLognIn" type="radio"></input>
                         <span className="RememberUsername">{t("Remember_username")}</span>
                     </div>
