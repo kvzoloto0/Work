@@ -1,6 +1,9 @@
 {
-  "app_title": "Titre",
-  "language": "Langue",
   "welcome_message": "Оберіть мову",
-  "days_since_release": "ça fait jours depuis la sortie de cette vidéo"
+  "SUPPLIER_PORTAL": "ПОРТАЛ ПОСТАЧАЛЬНИКА",
+  "Email": "Електронна пошта",
+  "Password": "Пароль",
+  "Remember_username": "Запам’ятайте ім’я користувача",
+  "Sign_up": "Зареєструватися",
+  "Create account": "Створити акаунт"
 }

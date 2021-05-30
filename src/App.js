@@ -9,7 +9,6 @@ import EnglishIconsLanguage from './img/EnglishIconsLanguage.svg'
 import SignIn from './component/SignIn/SignIn'
 import {BrowserRouter, Route, NavLink} from "react-router-dom";
 import Language from './component/Language/Language'
-import BasicExample from './component/qqq'
 
 
 

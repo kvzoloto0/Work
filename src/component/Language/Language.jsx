@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import cookies from 'js-cookie'
 import classNames from 'classnames'
-import './../../index.css'
+import './Language.css'
 import UkraineIconsLanguage from './../../img/UkraineIconsLanguage.svg'
 import EnglishIconsLanguage from './../../img/EnglishIconsLanguage.svg'
 import SignIn from '../SignIn/SignIn'
@@ -18,11 +18,13 @@ const languages = [
       code: 'fr',
       name: <div className="UkraineBlockLanguage"><img src={UkraineIconsLanguage} /></div>,
       country_code: 'fr',
+      supplierPortal: 'SUPPLIER PORTAL'
     },
     {
       code: 'en',
       name: <div className="EnglishBlockLanguage"><img src={EnglishIconsLanguage} /></div>,
       country_code: 'gb',
+      supplierPortal: 'ПОРТАЛ ПОСТАЧАЛЬНИКА'
     },
   ]
 
@@ -35,9 +37,9 @@ const Language = () => {
 
 
         return (
-        <div>
 
-            <div className="container blockDimensionsCenter">
+
+            <div className="blockDimensionsCenter">
             <div className="language-select blockDimensions">
 
 
@@ -62,12 +64,12 @@ const Language = () => {
                         i18next.changeLanguage(code)
                         }}
                     >
-                        
-                    </a> 
                     <BrowserRouter>
                         <NavLink to="/SignIn">{name}</NavLink>     
                         <Route path="/SignIn" render={ () => <SignIn /> } />
                     </BrowserRouter>
+                    </a> 
+                    
                     {/* </button>  */}
                 </div>
                 ))}
@@ -80,7 +82,7 @@ const Language = () => {
 
             </div>
 
-            </div>
+
     )
 }
 

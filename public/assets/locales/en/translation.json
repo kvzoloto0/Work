@@ -1,6 +1,9 @@
 {
-  "app_title": "Title",
-  "language": "Language",
   "welcome_message": "Select language",
-  "days_since_release": "it's been days since this video was released"
+  "SUPPLIER_PORTAL": "SUPPLIER PORTAL",
+  "Email": "Email",
+  "Password": "Password",
+  "Remember_username": "Remember username",
+  "Sign_up": "Sign up",
+  "Create_account": "Create account"
 }
