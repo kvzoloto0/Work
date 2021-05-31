@@ -29,7 +29,7 @@ const SignIn = () => {
             <div className="blockDimensionsCenter">
                 <div className="blockAppearanceLogiIn">
                     <div className="blueSquare"></div>
-                    <div className="SupplierPortal">{t("SUPPLIER_PORTAL")}</div>
+                    <div className="SupplierPortalText">{t("SUPPLIER_PORTAL")}</div>
                     <input className="emailLognIn" placeholder={t("Email")}></input>
                     <input className="passwordLognIn" placeholder={t("Password")}></input>
                     <div className="radioLognInBlock">                    

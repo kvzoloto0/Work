@@ -18,13 +18,11 @@ const languages = [
       code: 'fr',
       name: <div className="UkraineBlockLanguage"><img src={UkraineIconsLanguage} /></div>,
       country_code: 'fr',
-      supplierPortal: 'SUPPLIER PORTAL'
     },
     {
       code: 'en',
       name: <div className="EnglishBlockLanguage"><img src={EnglishIconsLanguage} /></div>,
       country_code: 'gb',
-      supplierPortal: 'ПОРТАЛ ПОСТАЧАЛЬНИКА'
     },
   ]
 
@@ -37,12 +35,8 @@ const Language = () => {
 
 
         return (
-
-
             <div className="blockDimensionsCenter">
             <div className="language-select blockDimensions">
-
-
 
             <div className="row">
                 <div className="col-12">
@@ -50,18 +44,16 @@ const Language = () => {
                 </div>    
             </div>
 
-
             <div className="languageSelectionUkraineAndEnglish">
                 {languages.map(({ code, name, country_code }) => (        
-                <div key={country_code}>
-                    {/* <button onClick={ () => { <SignIn /> } }>                   */}
+                <div key={country_code}>                   
                     <a
                         href="#"
                         className={classNames({
                         disabled: currentLanguageCode === code,
                         })}
                         onClick={() => {
-                        i18next.changeLanguage(code)
+                            i18next.changeLanguage(code)
                         }}
                     >
                     <BrowserRouter>
@@ -69,20 +61,12 @@ const Language = () => {
                         <Route path="/SignIn" render={ () => <SignIn /> } />
                     </BrowserRouter>
                     </a> 
-                    
-                    {/* </button>  */}
                 </div>
                 ))}
             </div>
-
-            
             </div> 
 
-
-
             </div>
-
-
     )
 }
 
