@@ -5,5 +5,10 @@
   "Password": "Password",
   "Remember_username": "Remember username",
   "Sign_up": "Sign up",
-  "Create_account": "Create account"
+  "Create_account": "Create account",
+  "Last name": "Last name",
+  "Mobile": "Mobile",
+  "Supplier name": "Supplier name",
+  "Supplier code (EDRPOU)": "Supplier code (EDRPOU)",
+  "Send request": "Send request"
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import './SignIn.css';
+import CreateAccount from '../CreateAccount/CreateAccount';
+import {BrowserRouter, Route, NavLink} from "react-router-dom";
 
 
 import { useTranslation } from 'react-i18next'
 import cookies from 'js-cookie'
+
+
 
 const languages = [
     {
@@ -25,7 +29,6 @@ const SignIn = () => {
 
     return (
         <div>
-
             <div className="blockDimensionsCenter">
                 <div className="blockAppearanceLogiIn">
                     <div className="blueSquare"></div>
@@ -39,7 +42,14 @@ const SignIn = () => {
                     <div>
                         <button className="buttonSignUp">{t("Sign_up")}</button>
                     </div>
-                    <div className="CreateAccount">{t("Create account")}</div>
+                    <div className="CreateAccount">
+                        <a>
+                        <BrowserRouter>
+                            <NavLink to="/SignIn/CreateAccount">{t("Create account")}</NavLink>     
+                            <Route path="/SignIn/CreateAccount" render={ () => <CreateAccount /> } />
+                        </BrowserRouter>
+                            </a>
+                    </div> 
                 </div>
             </div>
         </div>

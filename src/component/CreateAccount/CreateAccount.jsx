@@ -23,21 +23,19 @@ const CreateAccount = () => {
 
 
 
-
-
     return (
         <div>
             <div className="blockDimensionsCenter">
                 <div className="blockAppearanceCreateAccount">
-                    <div className="CreateAccountText">Create account</div>
+                    <div className="CreateAccountText">{t("Create account")}</div>
                     <input className="inputFormCreateAccount" placeholder={t("Email")}></input>
                     <input className="inputFormCreateAccount" placeholder={t("Password")}></input>
-                    <input className="inputFormCreateAccount" placeholder="Last name"></input>
-                    <input className="inputFormCreateAccount" placeholder="Mobile"></input>
-                    <input className="inputFormCreateAccount" placeholder="Supplier name"></input>
-                    <input className="inputFormCreateAccount" placeholder="Supplier code (EDRPOU)"></input>
+                    <input className="inputFormCreateAccount" placeholder={t("Last name")}></input>
+                    <input className="inputFormCreateAccount" placeholder={t("Mobile")}></input>
+                    <input className="inputFormCreateAccount" placeholder={t("Supplier name")}></input>
+                    <input className="inputFormCreateAccount" placeholder={t("Supplier code (EDRPOU)")}></input>
                     <div>
-                        <button className="buttonSendRequest">Send request</button>
+                        <button className="buttonSendRequest">{t("Send request")}</button>
                     </div>
                 </div>
             </div>

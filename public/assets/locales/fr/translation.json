@@ -5,5 +5,10 @@
   "Password": "Пароль",
   "Remember_username": "Запам’ятайте ім’я користувача",
   "Sign_up": "Зареєструватися",
-  "Create account": "Створити акаунт"
+  "Create account": "Створити акаунт",
+  "Last name": "Прізвище",
+  "Mobile": "Мобільний",
+  "Supplier name": "Ім'я постачальника",
+  "Supplier code (EDRPOU)": "Код постачальника (EDRPOU)",
+  "Send request": "Відправити запит"
 }
