@@ -11,8 +11,6 @@ import {BrowserRouter, Route, NavLink} from "react-router-dom";
 
 
 
-
-
 const languages = [
     {
       code: 'fr',
@@ -27,6 +25,8 @@ const languages = [
   ]
 
 
+
+
 const Language = () => {
         const currentLanguageCode = cookies.get('i18next') || 'en'
         const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
@@ -34,8 +34,8 @@ const Language = () => {
 
 
 
-        return (
-            <div className="blockDimensionsCenter">
+        return (        
+            <div className="blockDimensionsCenter" id="qqq">
             <div className="language-select blockDimensions">
 
             <div className="row">
@@ -43,8 +43,9 @@ const Language = () => {
                 <h1 className="textDecorationSelectLanguage">{t('welcome_message')}</h1> 
                 </div>    
             </div>
-
-            <div className="languageSelectionUkraineAndEnglish">
+            <BrowserRouter>
+            <div className="languageSelectionUkraineAndEnglish">      
+                <Route path="/SignIn" render={ () => <SignIn /> } />
                 {languages.map(({ code, name, country_code }) => (        
                 <div key={country_code}>                   
                     <a
@@ -56,16 +57,14 @@ const Language = () => {
                             i18next.changeLanguage(code)
                         }}
                     >
-                    <BrowserRouter>
-                        <NavLink to="/SignIn">{name}</NavLink>     
-                        <Route path="/SignIn" render={ () => <SignIn /> } />
-                    </BrowserRouter>
+                    <NavLink to="/SignIn">{name}</NavLink>
                     </a> 
                 </div>
                 ))}
+                
             </div>
+            </BrowserRouter>
             </div> 
-
             </div>
     )
 }
